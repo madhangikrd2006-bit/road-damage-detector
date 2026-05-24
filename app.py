@@ -21,9 +21,9 @@ st.markdown("Upload a road photo and AI will detect damage instantly!")
 st.sidebar.header("Settings")
 conf_threshold = st.sidebar.slider(
     "Confidence Threshold",
-    min_value=0.1,
+    min_value=0.05,
     max_value=0.9,
-    value=0.25,
+    value=0.10,
     step=0.05,
     help="Lower = detects more but less accurate. Higher = fewer but more confident detections."
 )
